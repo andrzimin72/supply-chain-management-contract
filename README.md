@@ -7,6 +7,7 @@ In recent years, compared to traditional supply chain systems blockchain technol
 ``` 
 mkdir farm-to-chain-dapp && cd farm-to-chain-dapp
 ```
+
 2. Initialize Node.js & Install Dependencies
 ``` 
 npm init -y
@@ -19,24 +20,28 @@ Install dependencies:
 npm install @nomicfoundation/hardhat-toolbox
 npm install dotenv
 ```
+
 3. Add Contract (contracts/MyContract.sol)
 Create folder:
 ``` 
 mkdir contracts
 ```
 Paste in the updated contract from earlier.
+
 4. Add Deployment Script (scripts/deploy.js)
 ``` 
 mkdir scripts
 touch scripts/deploy.js
 ```
 Paste the deploy script code from above.
+
 5. Add Test File (test/mycontract.test.js)
 ```
 mkdir test
 touch test/mycontract.test.js
 ```
 Paste in the test code.
+
 6. Add Frontend App
 ```
 npx create-react-app frontend
@@ -47,6 +52,7 @@ Replace contents of
 src/App.jsx
  and index
 .js with the React code provided earlier.
+
 7. Configure Hardhat
 Edit hardhat.config.js:
 ``` 
@@ -64,11 +70,13 @@ module.exports = {
   },
 };
 ```
+
 8. Add .env File
 ``` 
 ALCHEMY_GOERLI_URL=https://eth-goerli.g.alchemy.com/v2/YOUR_API_KEY
 PRIVATE_KEY=your_wallet_private_key
 ```
+
 9. Compile contract:
 ``` 
 npx hardhat compile
@@ -77,10 +85,12 @@ npx hardhat compile
 ```
 npx hardhat run scripts/deploy.js --network goerli
 ```
+
 11. Run tests:
 ```
 npx hardhat test
 ```
+
 12. Start frontend:
 ```
 cd frontend
