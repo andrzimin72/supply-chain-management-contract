@@ -80,6 +80,7 @@ PRIVATE_KEY=your_wallet_private_key
 9. Compile contract:
 ``` 
 npx hardhat compile
+```
 
 10. Deploy:
 ```
@@ -99,13 +100,13 @@ npm start
 
 ## Deploy to Goerli Testnet
 
-### 1. Get Goerli ETH
+1. Get Goerli ETH
 Go to a faucet like:
 - https://faucets.chain.link/goerli 
 - https://goerli-faucet.mudit.blog/ 
 Send some ETH to your MetaMask Goerli account.
 
-### 2. Set Up Alchemy / Infura
+2. Set Up Alchemy / Infura
 Sign up at:
 - [Alchemy](https://alchemy.com) 
 - [Infura](https://infura.io) 
@@ -117,13 +118,13 @@ Add to `.env`:
 2 PRIVATE_KEY=your_wallet_private_key
 ```
 
-### 3. Deploy Contract
+3. Deploy Contract
 ```
 npx hardhat run scripts/deploy.js --network goerli
 ```
 Save the deployed contract address.
 
-### 4. Update Frontend with Contract Address
+4. Update Frontend with Contract Address
 In frontend/src/App.jsx, replace:
 ``` 
 const contractAddress = "YOUR_CONTRACT_ADDRESS";
