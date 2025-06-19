@@ -1,0 +1,21 @@
+farm-to-chain-dapp/
+├── contracts/
+│   └── MyContract.sol
+├── scripts/
+│   └── deploy.js
+├── test/
+│   └── mycontract.test.js
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ConnectWallet.jsx
+│   │   │   ├── ProducerPanel.jsx
+│   │   │   ├── CustomerPanel.jsx
+│   │   │   └── CallContractFunction.jsx
+│   │   ├── App.jsx
+│   │   ├── index.js
+│   ├── package.json
+├── hardhat.config.js
+├── .env
+└── README.md
